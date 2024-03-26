@@ -18,7 +18,7 @@ const NavLink = ({ href, text }: LinkProps) => (
     </Link>
 )
 
-const Navigation = () => {
+const NavigationFirst = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const links = [
@@ -30,7 +30,7 @@ const Navigation = () => {
     ]
 
     return (
-        <nav className="bg-lightBlue relative flex items-center justify-between px-6 py-2 text-center h-50 md:h-[3rem]">
+        <nav className="bg-lightBlue relative flex items-center justify-between px-6 py-2 text-center h-12">
             <div>
                 <Link href="/">
                     <Image
@@ -60,7 +60,7 @@ const Navigation = () => {
             </div>
 
             {isOpen && (
-                <div className="fixed z-20 top-0 left-0 md:hidden flex flex-col items-center self-end w-full h-screen max-h-full px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase bg-lightBlue overflow-y-auto">
+                <div className="fixed  top-0 left-0 md:hidden flex flex-col items-center self-end w-full h-screen max-h-full px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase bg-lightBlue overflow-y-none">
                     {links.map((link, index) => (
                         <NavLink
                             key={index}
@@ -74,4 +74,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation
+export default NavigationFirst

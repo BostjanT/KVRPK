@@ -31,7 +31,7 @@ const Navigation = () => {
                         />
                     </Link>
                 </div>
-                {/* Hamburger Icon */}
+                {/* Hamburger SVG Icon */}
                 <div className="md:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -78,7 +78,7 @@ const Navigation = () => {
             </div>
             {isOpen && (
                 <div className="md:hidden mt-2 ">
-                    <div className="flex flex-col  h-screen gap-6 items-center justify-center ">
+                    <div className="flex flex-col  ham-height gap-6 items-center justify-center">
                         {links.map((link, index) => (
                             <MobileNavLink key={index} href={link.href}>
                                 {link.text}

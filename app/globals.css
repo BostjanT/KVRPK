@@ -19,7 +19,9 @@ h2 {
         height: calc(var(--vh, 1vh) * 100);
     }
 }
-
+.ham-height {
+    height: calc(100vh - 10rem);
+}
 @layer components {
     @media screen(md) {
         .bg-hero {
