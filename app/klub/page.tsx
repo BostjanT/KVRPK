@@ -1,9 +1,67 @@
+import Image from 'next/image'
+import Fourth from '@/public/pointer.jpg'
+import Fifth from '@/public/spaniel.jpg'
+
 export const metadata = {
     title: 'KVRPK - Klub',
 }
 
 const Klub = () => {
-    return <h1 className="text-3xl text-black">KLUB</h1>
+    return (
+        <section className="container md:max-w-5xl px-5 md:px-0  my-8  mx-auto min-h-screen shadow-xl shadow-darkGrey relative">
+            <div className="bg-hero"></div>
+            {/* <h2 className="mb-8">o nas</h2> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3">
+                <div className="md:col-span-1 md:row-span-1 flex items-center justify-center bg-darkGrey text-white">
+                    <p className="px-8 text-center md:text-md">
+                        Klub vodnikov reševalnih psov(KVRP) Kranj je bil
+                        ustanovljen 05.04.1994 na pobudo vodnikov reševalnih
+                        psov, ki so sodelovali že pred ustanovitvijo v različnih
+                        reševalnih organizacijah. Danes šteje klub blizu 30
+                        članov.
+                    </p>
+                </div>
+                <div className="md:col-span-1 md:row-span-1">
+                    <Image
+                        src={Fourth}
+                        alt="about us image"
+                        className="w-full h-full object-contain"
+                    />
+                </div>
+                <div className="md:col-span-1 md:row-span-1">
+                    <Image
+                        src={Fifth}
+                        alt="about us image"
+                        className="w-full h-full object-contain"
+                    />
+                </div>
+                <div className="md:col-span-1 md:row-span-1 flex items-center justify-center bg-darkGrey text-white">
+                    <p className="px-8 text-center md:text-md">
+                        Ukvarja se s šolanjem vodnikov reševalnih psov. V klubu
+                        so začetniki, pripravniki kot tudi usposobljeni vodniki.
+                        Predsednik KVRP Kranj je David Pogačnik. V svoji sestavi
+                        imamo naslednje enote: 2 regijski enoti za območje
+                        Gorenjske in enoto 10. članov MOK (Mestne občine Kranj).
+                    </p>
+                </div>
+                <div className="md:col-span-1 md:row-span-1  flex items-center justify-center bg-darkGrey text-white">
+                    <p className="px-8 text-center md:text-md">
+                        Smo člani mednarodne organizacije vodnikov reševalnih
+                        psov IRO, ter slovenske Zveze Društev in Klubov Vodnikov
+                        Reševalni Psov. Delujemo pa v okviru Uprave Republike
+                        Slovenije za Zaščito in Reševanje ter Občine Kranj.
+                    </p>
+                </div>
+                <div className="md:col-span-1 md:row-span-1">
+                    <Image
+                        src={Fifth}
+                        alt="about us image"
+                        className="w-full h-full object-contain"
+                    />
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default Klub

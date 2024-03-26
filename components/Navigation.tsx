@@ -7,6 +7,7 @@ import Logo from '../public/KVRPK_LOGO_small.png'
 type LinkProps = {
     href: string
     children: string
+    onClick?: () => void
 }
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -78,9 +79,12 @@ const Navigation = () => {
             </div>
             {isOpen && (
                 <div className="md:hidden mt-2 ">
-                    <div className="flex flex-col  ham-height gap-6 items-center justify-center">
+                    <div className="flex flex-col   ham-height overflow-y-hidden gap-6 items-center justify-center">
                         {links.map((link, index) => (
-                            <MobileNavLink key={index} href={link.href}>
+                            <MobileNavLink
+                                key={index}
+                                href={link.href}
+                                onClick={() => setIsOpen(!isOpen)}>
                                 {link.text}
                             </MobileNavLink>
                         ))}
@@ -99,9 +103,10 @@ const NavLink = ({ href, children }: LinkProps) => (
     </Link>
 )
 
-const MobileNavLink = ({ href, children }: LinkProps) => (
+const MobileNavLink = ({ href, children, onClick }: LinkProps) => (
     <Link
         href={href}
+        onClick={onClick}
         className="block py-2 px-4 text-white  hover:text-darkGrey transition-colors duration-300 rounded-md">
         {children}
     </Link>

@@ -21,7 +21,7 @@ const config: Config = {
                 whiter: '#fff',
                 dark: '#0E0E0C',
                 alertOrange: '#FF1900',
-                shadows:'#174d80'
+                shadows: '#174d80',
             },
             fontFamily: {
                 sans: ['Raleway', 'sans-serif'],

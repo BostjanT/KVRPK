@@ -13,15 +13,17 @@ h2 {
     box-shadow: -11px -18px 28px -6px rgba(10, 34, 57, 0.6);
 }
 
+.ham-height {
+    height: calc(100vh - 26vh);
+}
+
 @supports (-webkit-touch-callout: none) {
     .h-screen {
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
     }
 }
-.ham-height {
-    height: calc(100vh - 10rem);
-}
+
 @layer components {
     @media screen(md) {
         .bg-hero {
