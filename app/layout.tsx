@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
-import Navigation from '@/components/Navigation'
+import Navigation from '@/components/Navigation_'
 import Footer from '@/components/Footer'
-import ChatNav from '@/components/ChatNav'
+import ChatNav from '@/components/Navigation'
 
 const monte = Montserrat({ subsets: ['latin'] })
 
