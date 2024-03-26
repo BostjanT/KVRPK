@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import ChatNav from '@/components/ChatNav'
 
 const monte = Montserrat({ subsets: ['latin'] })
 
@@ -20,7 +21,8 @@ export default function RootLayout({
         <html lang="en">
             <body className={monte.className}>
                 <>
-                    <Navigation />
+                    {/* <Navigation /> */}
+                    <ChatNav />
                     {children}
                     <Footer />
                 </>

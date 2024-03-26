@@ -12,6 +12,14 @@ h2 {
 .drop-shadow {
     box-shadow: -11px -18px 28px -6px rgba(10, 34, 57, 0.6);
 }
+
+@supports (-webkit-touch-callout: none) {
+    .h-screen {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+}
+
 @layer components {
     @media screen(md) {
         .bg-hero {
