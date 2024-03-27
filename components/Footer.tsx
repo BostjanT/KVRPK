@@ -18,16 +18,24 @@ const Footer = () => {
                     />
                 </div>
                 <div className="flex flex-col items-center justify-between space-y-4 text-lg font-light  text-white">
-                    <a href="#" className="uppercase hover:text-alertOrange">
+                    <a
+                        href="/klub"
+                        className="uppercase hover:text-alertOrange">
                         O nas
                     </a>
-                    <a href="#" className="uppercase hover:text-alertOrange">
+                    <a
+                        href="/resevalni"
+                        className="uppercase hover:text-alertOrange">
                         Reševalni pes
                     </a>
-                    <a href="#" className="uppercase hover:text-alertOrange">
+                    <a
+                        href="/novice"
+                        className="uppercase hover:text-alertOrange">
                         Novice
                     </a>
-                    <a href="#" className="uppercase hover:text-alertOrange">
+                    <a
+                        href="solanje"
+                        className="uppercase hover:text-alertOrange">
                         Šolanje
                     </a>
                 </div>
