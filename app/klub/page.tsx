@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Fourth from '@/public/pointer.jpg'
 import Fifth from '@/public/spaniel.jpg'
+import Logo from '@/public/KVRPK_LOGO_small.png'
 
 export const metadata = {
     title: 'KVRPK - Klub',
@@ -10,7 +11,11 @@ const Klub = () => {
     return (
         <section className="container md:max-w-5xl md:px-0  my-8  mx-auto min-h-screen shadow-xl shadow-darkGrey relative">
             <div className="bg-hero"></div>
-            {/* <h2 className="mb-8">o nas</h2> */}
+            <Image
+                src={Logo}
+                alt="klubski logo"
+                className="absolute hidden md:block top-[30vh] w-[14rem] -right-[10rem] -z-10 rotate-[30deg] opacity-70"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3">
                 <div className="order-1 md:order-none md:col-span-1 md:row-span-1 flex items-center justify-center bg-darkGrey text-white">
                     <p className="px-8 py-8 md:py-0 text-center md:text-md">

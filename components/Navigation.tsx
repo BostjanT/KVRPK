@@ -107,7 +107,7 @@ const MobileNavLink = ({ href, children, onClick }: LinkProps) => (
     <Link
         href={href}
         onClick={onClick}
-        className="block py-2 px-4 text-white  hover:text-darkGrey transition-colors duration-300 rounded-md">
+        className="block py-2 font-medium tracking-wide px-4 text-white  hover:text-darkGrey transition-colors duration-300 rounded-md">
         {children}
     </Link>
 )
