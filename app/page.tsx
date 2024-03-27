@@ -5,6 +5,7 @@ import Faq from '@/components/Faq'
 import Gallery from '@/components/Galerry'
 import HomeNews from '@/components/HomeNews'
 import Solanje from '@/components/Solanje'
+import Sponzorji from '@/components/Sponzorji'
 
 export const metadata: Metadata = {
     title: 'Klub vodnikov reševalnih psov Kranj',
@@ -19,6 +20,7 @@ export default function Home() {
             <Faq />
             <Gallery />
             <Solanje />
+            <Sponzorji />
         </>
     )
 }
