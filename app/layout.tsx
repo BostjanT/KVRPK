@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import ToTheTopBtn from '@/components/ToTheTop'
 
 const monte = Montserrat({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
                     <Navigation />
                     {children}
                     <Footer />
+                    <ToTheTopBtn />
                 </>
             </body>
         </html>

@@ -22,10 +22,10 @@ const SingleNews = ({ url, title, text }: SingleNews) => {
                 </a>
             </div>
             <div className="p-6 text-surface text-dark">
-                <h5 className="mb-2 text-xl font-medium leading-tight">
+                <h5 className="mb-2 text-xl font-medium leading-tight ">
                     {title}
                 </h5>
-                <p className="mb-4 text-base">{text}</p>
+                <p className="mb-4 text-base line-clamp-4">{text}</p>
                 <button
                     type="button"
                     className="inline-block rounded bg-lightBlue px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white  transition duration-150 ease-in-out hover:shadow-md hover:shadow-darkGrey hover:scale-105 focus:bg-primary-accent-300 "

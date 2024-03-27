@@ -27,6 +27,6 @@
         "**/*.tsx",
         ".next/types/**/*.ts",
         "components/HamburgerMenu.tsx"
-    ],
+, "components/ToTheTop.tsx"    ],
     "exclude": ["node_modules"]
 }

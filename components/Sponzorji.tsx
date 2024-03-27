@@ -21,7 +21,7 @@ const Sponzorji = () => {
         { href: 'https://hertz-slovenija.si/', image: Hertz, alt: 'hertz' },
     ]
     return (
-        <div className="flex flex-col space-y-8 md:space-x-20 md:space-y-0 md:flex-row items-center justify-center py-10 my-8 shadow-xl shadow-darkGrey">
+        <div className="flex flex-col space-y-8 md:space-x-20 md:space-y-0 md:flex-row items-center justify-center py-20 my-8 sponsor-shadow">
             {links.map((link, index) => {
                 return (
                     <Link href={link.href} key={index}>
