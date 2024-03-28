@@ -4,6 +4,8 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import ToTheTopBtn from '@/components/ToTheTop'
+import Header from '@/components/Header'
+import MyNavigation from '@/components/MyNavigation'
 
 const monte = Montserrat({ subsets: ['latin'] })
 
@@ -21,7 +23,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={monte.className}>
                 <>
-                    <Navigation />
+                    <MyNavigation />
                     {children}
                     <Footer />
                     <ToTheTopBtn />

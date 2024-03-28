@@ -3,6 +3,7 @@ import Facebook from '@/public/icon-facebook.svg'
 import Logo from '@/public/KVRPK_LOGO_small.png'
 import Image from 'next/image'
 import { PhoneIcon, AtSymbolIcon, HomeIcon } from '@heroicons/react/24/outline'
+import NavLinks from './NavLinks'
 
 const Footer = () => {
     return (
