@@ -9,7 +9,7 @@ export const metadata = {
 
 const Klub = () => {
     return (
-        <section className="container md:max-w-5xl md:px-0  my-8  mx-auto min-h-screen shadow-xl shadow-darkGrey relative">
+        <section className="container md:max-w-5xl md:px-0 mb-8 md:my-8  mx-auto min-h-screen shadow-xl shadow-darkGrey relative">
             <div className="bg-hero"></div>
             <Image
                 src={Logo}
