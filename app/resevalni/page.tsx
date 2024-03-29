@@ -7,7 +7,7 @@ import RescueDogWork from '@/components/RescueDogWork'
 
 const ResevalniPsi = () => {
     return (
-        <section className="flex flex-col container bg-whiter md:px-0 md:mt-8 mx-auto min-h-screen shadow-xl shadow-darkGrey relative ">
+        <section className="flex flex-col container bg-whiter md:px-0 mt-2 md:mt-0 mx-auto min-h-screen shadow-xl shadow-darkGrey relative ">
             <div className="relative">
                 <div className="bg-hero"></div>
 
@@ -17,7 +17,7 @@ const ResevalniPsi = () => {
                         <Image
                             src={RescueDogs}
                             alt="four dogs with mountains in background"
-                            className="w-full h-full rounded-t-md md:rounded-md object-center"
+                            className="w-full h-full  object-center"
                         />
                     </div>
 
@@ -99,7 +99,7 @@ const ResevalniPsi = () => {
 
             <RescueDogWork />
 
-            <div className="flex flex-col md:flex-row md:h-52 max-w-7xl gap-4 mb-4 mx-auto">
+            <div className="flex flex-col md:flex-row  max-w-7xl gap-4 mb-4 mx-auto ">
                 <Image
                     src={Iskalna}
                     alt=""
