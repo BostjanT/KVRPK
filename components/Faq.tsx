@@ -36,8 +36,7 @@ const Faq = () => {
             <div className="container mx-auto  ">
                 <Image
                     src={Question}
-                    width={240}
-                    className="absolute hidden max-w-[22rem] h-80 lg:block top-20 left-10 rounded-md"
+                    className="absolute hidden w-auto h-48 lg:block bottom-40 left-10 rounded-md"
                     alt="kids asking faq"
                 />
                 <Image

@@ -26,7 +26,7 @@ const Sponzorji = () => {
             <div className="flex flex-col items-center md:flex-row gap-8 ">
                 {links.map((link, index) => {
                     return (
-                        <Link href={link.href} key={index}>
+                        <Link href={link.href} key={index} target="_blank">
                             <Image
                                 src={link.image}
                                 alt="link.alt"

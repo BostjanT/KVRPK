@@ -12,11 +12,13 @@ const Footer = () => {
             <div className="container flex flex-col items-center justify-around mx-auto space-y-12 px-6 md:flex-row md:space-y-0">
                 {/* <!-- Logo/Menu Container --> */}
                 <div className="flex items-center justify-center">
-                    <Image
-                        src={Logo}
-                        alt="klubski logotip"
-                        className="mb-1 max-w-24"
-                    />
+                    <Link href="/">
+                        <Image
+                            src={Logo}
+                            alt="klubski logotip"
+                            className="mb-1 max-w-24"
+                        />
+                    </Link>
                 </div>
                 <div className="flex flex-col items-center justify-between space-y-4 text-lg font-light  text-white">
                     <a

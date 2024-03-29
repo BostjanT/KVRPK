@@ -1,10 +1,13 @@
 import Image from 'next/image'
 import RescueDogs from '@/public/fourdogs.webp'
+import Iskalna from '@/public/iskalna_akcija.jpg'
+import Svetovno from '@/public/svetovno_iskanje.jpg'
+import Skupinska from '@/public/skupinska.jpg'
 import RescueDogWork from '@/components/RescueDogWork'
 
 const ResevalniPsi = () => {
     return (
-        <section className="flex flex-col container bg-whiter  md:px-0 mt-8 mx-auto min-h-screen shadow-xl shadow-darkGrey ">
+        <section className="flex flex-col container bg-whiter md:px-0 md:mt-8 mx-auto min-h-screen shadow-xl shadow-darkGrey relative ">
             <div className="relative">
                 <div className="bg-hero"></div>
 
@@ -30,8 +33,9 @@ const ResevalniPsi = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col mx-auto mt-[3rem] md:mt-[7rem] max-w-3xl px-4 ">
-                <p>
+            {/*  PRVI ZAPISI */}
+            <div className="flex flex-col mx-auto mt-[3rem] md:mt-[7rem] max-w-3xl px-4 relative ">
+                <p className="z-50 md:text-lg">
                     Prvi zapisi o uporabi reševalnega psa segajo v leto 1707, ko
                     menihi švicarskega samostana s svojimi psi pasme bernardinec
                     iščejo in rešujejo obnemogle pohodnike na prelazu St.
@@ -46,6 +50,7 @@ const ResevalniPsi = () => {
                     rudarja.
                 </p>
             </div>
+            {/* GRID PREDSTAVITEV */}
             <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-7xl gap-4 my-6 p-4 md:p-10 mx-auto text-white">
                 <div className="bg-darkGrey rounded-md p-4">
                     <h3 className="font-semibold">
@@ -90,22 +95,23 @@ const ResevalniPsi = () => {
                     </ol>
                 </div>
             </div>
+            {/* TEKST O DELU */}
 
             <RescueDogWork />
 
             <div className="flex flex-col md:flex-row md:h-52 max-w-7xl gap-4 mb-4 mx-auto">
                 <Image
-                    src={RescueDogs}
+                    src={Iskalna}
                     alt=""
                     className="h-full w-full object-contain"
                 />
                 <Image
-                    src={RescueDogs}
+                    src={Skupinska}
                     alt=""
                     className="h-full w-full object-contain"
                 />
                 <Image
-                    src={RescueDogs}
+                    src={Svetovno}
                     alt=""
                     className="h-full w-full object-contain"
                 />
