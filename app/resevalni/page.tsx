@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import RescueDogs from '@/public/fourdogs.webp'
+import RescueDogWork from '@/components/RescueDogWork'
 
 const ResevalniPsi = () => {
     return (
@@ -51,43 +52,63 @@ const ResevalniPsi = () => {
                         Znanje vodnika se pridobiva na tečajih in seminarjih,
                         ter preveri z izpiti.
                     </h3>
-                    <ul className="mt-4">
+                    <ol className="mt-4 list-disc list-inside">
                         <li>70 urni tečaj prve pomoči</li>
                         <li> tečaj prve veterinarske pomoči</li>
                         <li> tečaj vrvne tehnike</li>
                         <li>tečaj orientacije</li>
                         <li>tečaj o nevarnosti v gorah</li>
-                    </ul>
+                    </ol>
                 </div>
                 <div className="bg-darkGrey rounded-md p-4">
                     <h3 className="font-semibold">
                         Usposabljanje vodnika in psa poteka
                     </h3>
-                    <ul className="mt-4">
+                    <ol className="mt-4 list-disc list-inside">
                         <li>tedenske vaje v skupini</li>
                         <li>taborji</li>
                         <li>akcijske vaje</li>
                         <li>lavinski tečaji</li>
-                    </ul>
+                    </ol>
                 </div>
                 <div className="bg-darkGrey rounded-md p-4">
                     <h3 className="font-semibold">
                         Preverjanje vodnika in psa
                     </h3>
-                    <ul className="mt-4">
+                    <ol className="mt-4 list-disc list-inside">
                         <li>
                             nacionalni izpiti (ruševina, iskanje pogrešanih,
                             lavina, stopnje A in B)
                         </li>
                         <li> mednarodni izpiti</li>
                         <li> tekmovanja in svetovno prvenstvo</li>
-                        <li>
+                        <p className="mt-3">
                             Vodniki reševalnih psov, ki so uspešni na regijskih
                             preizkušnjah se uvrstijo v intervencijsko enoto in
                             sodelujejo v resničnih akcijah iskanja
-                        </li>
-                    </ul>
+                        </p>
+                    </ol>
                 </div>
+            </div>
+
+            <RescueDogWork />
+
+            <div className="flex flex-col md:flex-row md:h-52 max-w-7xl gap-4 mb-4 mx-auto">
+                <Image
+                    src={RescueDogs}
+                    alt=""
+                    className="h-full w-full object-contain"
+                />
+                <Image
+                    src={RescueDogs}
+                    alt=""
+                    className="h-full w-full object-contain"
+                />
+                <Image
+                    src={RescueDogs}
+                    alt=""
+                    className="h-full w-full object-contain"
+                />
             </div>
         </section>
     )
