@@ -7,7 +7,7 @@ import RescueDogWork from '@/components/RescueDogWork'
 
 const ResevalniPsi = () => {
     return (
-        <section className="flex flex-col container bg-whiter md:px-0 mt-2 md:mt-0 mx-auto min-h-screen shadow-xl shadow-darkGrey relative ">
+        <section className="flex flex-col container bg-whiter md:px-0 mt-2 md:mt-0 mx-auto  shadow-xl shadow-darkGrey relative ">
             <div className="relative">
                 <div className="bg-hero"></div>
 
@@ -51,7 +51,7 @@ const ResevalniPsi = () => {
                 </p>
             </div>
             {/* GRID PREDSTAVITEV */}
-            <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-7xl gap-4 my-6 p-4 md:p-10 mx-auto text-white">
+            <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-7xl gap-4 my-6 px-2 md:p-10 mx-auto text-white">
                 <div className="bg-darkGrey rounded-md p-4">
                     <h3 className="font-semibold">
                         Znanje vodnika se pridobiva na tečajih in seminarjih,
@@ -99,7 +99,7 @@ const ResevalniPsi = () => {
 
             <RescueDogWork />
 
-            <div className="flex flex-col md:flex-row  max-w-7xl gap-4 mb-4 mx-auto ">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:mb-4 ">
                 <Image
                     src={Iskalna}
                     alt=""

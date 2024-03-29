@@ -32,7 +32,7 @@ const RescueDogWork = () => {
                 return (
                     <div
                         key={index}
-                        className="flex flex-col max-w-4xl mx-auto my-3 px-4">
+                        className="flex flex-col max-w-4xl mx-auto my-3 px-2">
                         <h3 className="text-2xl font-bold">{rescue.header}</h3>
                         <p>{rescue.text}</p>
                     </div>
