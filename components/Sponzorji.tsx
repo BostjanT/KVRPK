@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
-import PasjiNet from '@/public/pasjinet.jpg'
-import Triglav from '@/public/logo_triglav.png'
-import Hertz from '@/public/Hertz_.jpg'
+import PasjiNet from '@/public/sponzorji/pasjinet.jpg'
+import Triglav from '@/public/sponzorji/logo_triglav.png'
+import Hertz from '@/public/sponzorji/Hertz_.jpg'
 import Link from 'next/link'
 
 type SponzorjiProps = {
@@ -21,7 +21,7 @@ const Sponzorji = () => {
         { href: 'https://hertz-slovenija.si/', image: Hertz, alt: 'hertz' },
     ]
     return (
-        <div className="flex flex-col px-2 md:px-0 items-center justify-center py-20 my-8 sponsor-shadow">
+        <div className="flex flex-col px-2 md:px-0 items-center justify-center py-20 my-8 sponsor-shadow sponsorBcg">
             <h2 className="font-normal mb-8">hvala, da nas podpirate</h2>
             <div className="flex flex-col items-center md:flex-row gap-8 ">
                 {links.map((link, index) => {
@@ -30,7 +30,7 @@ const Sponzorji = () => {
                             <Image
                                 src={link.image}
                                 alt="link.alt"
-                                className=" shadow-lg shadow-gray-400 hover:shadow-lg hover:shadow-darkGrey"
+                                className="bg-whiter shadow-lg shadow-gray-400 hover:shadow-lg hover:shadow-darkGrey"
                             />
                         </Link>
                     )

@@ -1,0 +1,36 @@
+{
+    "vnosi": [
+        {
+            "id": 1,
+            "naslov": "Uspešna iskalna akcija v gorah",
+            "datum": "2024-03-28",
+            "vsebina": "Ekipa reševalnih psov je uspešno izvedla iskalno akcijo v visokogorju. Pse so uspešno uporabili pri iskanju pogrešane osebe, ki so jo našli v dobrem zdravstvenem stanju. Bravo vsem reševalcem!",
+            "tip": "novica",
+            "slika": "/golden1.webp"
+        },
+        {
+            "id": 2,
+            "naslov": "Predstavitev dela reševalnih psov",
+            "datum": "2024-03-25",
+            "vsebina": "Danes smo organizirali predstavitev dela reševalnih psov za šolarje. Otroci so imeli priložnost spoznati naše štirinožne junake in se naučili nekaj osnovnih veščin iskanja v naravi.",
+            "tip": "predstavitev",
+            "slika": "/golden1.webp"
+        },
+        {
+            "id": 3,
+            "naslov": "Reševalni psi pomagajo pri potresnem rušenju",
+            "datum": "2024-03-20",
+            "vsebina": "Naša ekipa reševalnih psov je bila aktivirana za pomoč pri iskanju pogrešanih oseb pod ruševinami po potresu. Naši psi so ključni pri hitrem lociranju preživelih pod ruševinami. Delamo neprekinjeno, da bi rešili čim več življenj.",
+            "tip": "akcija",
+            "slika": "/iskalna_akcija.jpg"
+        },
+        {
+            "id": 4,
+            "naslov": "Novo šolanje reševalnih psov",
+            "datum": "2024-03-15",
+            "vsebina": "Z veseljem sporočamo, da smo začeli novo šolanje naših reševalnih psov. V naslednjih mesecih bomo izobraževali nove pse in njihove vodnike, da bodo pripravljeni na vsako situacijo. Z veseljem sporočamo, da smo začeli novo šolanje naših reševalnih psov. V naslednjih mesecih bomo izobraževali nove pse in njihove vodnike, da bodo pripravljeni na vsako situacijo.",
+            "tip": "novica",
+            "slika": "/skupinska.jpg"
+        }
+    ]
+}
