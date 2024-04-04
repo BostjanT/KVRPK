@@ -1,50 +1,51 @@
-import Slika1 from '@/public/fourdogs.webp'
-import Slika2 from '@/public/golden1.webp'
-import Slika3 from '@/public/golden_forest.jpg'
-import Slika4 from '@/public/iskalna_akcija.jpg'
-import Slika5 from '@/public/pointer.jpg'
-import Slika6 from '@/public/spaniel.jpg'
-import Slika7 from '@/public/skupinska.jpg'
-import Slika8 from '@/public/svetovno_iskanje.jpg'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image'
+import Modal from '@/components/Modal'
+import { ImageG } from '@/types/types'
+import { gallery } from './images' // Correct import
 
-const Galerija = () => {
-    const images = [
-        Slika1,
-        Slika2,
-        Slika3,
-        Slika4,
-        Slika5,
-        Slika6,
-        Slika7,
-        Slika8,
-    ]
+interface MasonryGalleryProps {
+    images: ImageG[]
+}
 
-    const getRandomSize = () => {
-        const sizes = ['h-48', 'h-64', 'h-80', 'h-96', 'h-112']
-        return sizes[Math.floor(Math.random() * sizes.length)]
+const MasonryGallery = ({ images }: MasonryGalleryProps) => {
+    const [modalOpen, setModalOpen] = useState<boolean>(false)
+    const [selectedImage, setSelectedImage] = useState<ImageG | null>(null)
+
+    const openModal = (image: ImageG) => {
+        setSelectedImage(image)
+        setModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setModalOpen(false)
+        setSelectedImage(null)
     }
 
     return (
-        <section className="flex flex-col container px-5 md:px-0 bg-whiter max-w-8xl mt-8  mx-auto min-h-screen shadow-xl shadow-darkGrey relative">
-            <div className="bg-hero"></div>
-            <h2 className="mb-8">galerija</h2>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
-                {images.map((image, index) => (
-                    <div
-                        key={index}
-                        className={`relative overflow-hidden bg-gray-200 rounded-md shadow-md ${getRandomSize()} `}>
-                        <Image
-                            src={image}
-                            alt={'gallery image'}
-                            className="absolute inset-0 w-full h-full object-cover"
-                        />
-                    </div>
-                ))}
-            </div>
-        </section>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-10 max-w-6xl mx-auto">
+            {gallery.map((image) => (
+                <Image
+                    key={image.index}
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    className="cursor-pointer w-60 h-60 object-cover object-center rounded-md"
+                    onClick={() => openModal(image)}
+                />
+            ))}
+            <Modal
+                isOpen={modalOpen}
+                onClose={closeModal}
+                imageSrc={selectedImage?.src || ''}
+                imageAlt={selectedImage?.alt || ''}
+                imageHeight={selectedImage?.height}
+                imageWidth={selectedImage?.width}
+            />
+        </div>
     )
 }
 
-export default Galerija
+export default MasonryGallery
