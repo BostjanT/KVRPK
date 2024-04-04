@@ -26,8 +26,8 @@ const Modal: React.FC<ModalProps> = ({
     const maxHeight = Math.min(window.innerHeight * 0.9, imageHeight)
 
     return (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-            <div className="relative max-w-2xl w-full bg-white p-4 rounded-lg shadow-lg">
+        <div className="fixed  top-0 left-0 w-full h-full bg-dark bg-opacity-85 flex items-center justify-center z-50">
+            <div className=" max-w-2xl w-full   p-2 rounded-lg shadow-lg">
                 <Image
                     src={imageSrc}
                     alt={imageAlt}
@@ -40,7 +40,7 @@ const Modal: React.FC<ModalProps> = ({
                     className="w-full h-full object-cover mx-auto"
                 />
                 <button
-                    className="absolute p-1 top-1 right-1 bg-dark rounded-full text-alertOrange"
+                    className="absolute p-1 top-4 right-4 bg-dark rounded-full text-alertOrange"
                     onClick={onClose}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
