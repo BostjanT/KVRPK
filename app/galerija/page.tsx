@@ -1,9 +1,10 @@
 import MyGallery from '@/components/Galerry'
-import { images } from './images'
+import { pictures } from './images'
 const Gallery = () => {
     return (
-        <section className="container md:max-w-5xl md:px-0 mb-8 md:my-8  mx-auto min-h-screen shadow-xl shadow-darkGrey relative">
-            <MyGallery images={images} />
+        <section className="container md:max-w-5xl mb-8 md:my-8 md:px-2 mx-auto min-h-screen shadow-xl shadow-darkGrey relative">
+            <h2>galerija</h2>
+            <MyGallery images={pictures} />
         </section>
     )
 }

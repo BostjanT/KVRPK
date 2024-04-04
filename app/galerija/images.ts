@@ -1,10 +1,9 @@
-export const images = [
+export const pictures = [
     {
         index: 1,
         src: '/fourdogs.webp',
         width: 1792,
         height: 1024,
-        thumbnail: ''
     },
     {
         src: '/golden1.webp',
@@ -12,7 +11,8 @@ export const images = [
         width: 1792,
         height: 1024,
         index: 2,
-        alt: 'gallery image',  thumbnail: ''
+        alt: 'gallery image',
+        thumbnail: '',
     },
     {
         src: '/golden_forest.jpg',
@@ -20,7 +20,8 @@ export const images = [
         width: 512,
         height: 512,
         index: 3,
-        alt: 'gallery image',  thumbnail: ''
+        alt: 'gallery image',
+        thumbnail: '',
     },
     {
         src: '/fourdogs.webp',
@@ -62,14 +63,7 @@ export const images = [
         index: 8,
         alt: 'gallery image',
     },
-    {
-        src: '/portrait2.webp',
-        original: '/portrait2.webp',
-        width: 366,
-        height: 640,
-        index: 9,
-        alt: 'gallery image',
-    },
+
     {
         src: '/svetovno_iskanje.jpg',
         original: '/svetovno_iskanje.jpg',
@@ -90,8 +84,8 @@ export const images = [
     {
         src: '/svetovno_iskanje.jpg',
         original: '/svetovno_iskanje.jpg',
-        width: 6400,
-        height: 3600,
+        width: 640,
+        height: 360,
         index: 12,
         alt: 'gallery image',
     },
@@ -104,7 +98,7 @@ export const images = [
         alt: 'gallery image',
     },
     {
-        src: '/portrait2.webp',
+        src: '/skupinska.jpg',
         original: '/portrait2.webp',
         width: 180,
         height: 320,
@@ -117,6 +111,78 @@ export const images = [
         width: 320,
         height: 180,
         index: 15,
+        alt: 'gallery image',
+    },
+    {
+        src: '/iskalna_akcija.jpg',
+        original: '/golden_forest.jpg',
+        width: 320,
+        height: 180,
+        index: 16,
+        alt: 'gallery image',
+    },
+    {
+        src: '/skupinska.jpg',
+        original: '/portrait2.webp',
+        width: 320,
+        height: 180,
+        index: 17,
+        alt: 'gallery image',
+    },
+    {
+        src: '/svetovno_iskanje.jpg',
+        original: '/svetovno_iskanje.jpg',
+        width: 6400,
+        height: 3600,
+        index: 18,
+        alt: 'gallery image',
+    },
+    {
+        src: '/golden1.webp',
+        original: '/golden1.webp',
+        width: 320,
+        height: 180,
+        index: 19,
+        alt: 'gallery image',
+    },
+    {
+        src: '/skupinska.jpg',
+        original: '/portrait2.webp',
+        width: 180,
+        height: 320,
+        index: 20,
+        alt: 'gallery image',
+    },
+    {
+        src: '/golden_forest.jpg',
+        original: '/golden_forest.jpg',
+        width: 320,
+        height: 180,
+        index: 21,
+        alt: 'gallery image',
+    },
+    {
+        src: '/iskalna_akcija.jpg',
+        original: '/golden_forest.jpg',
+        width: 320,
+        height: 180,
+        index: 22,
+        alt: 'gallery image',
+    },
+    {
+        src: '/skupinska.jpg',
+        original: '/portrait2.webp',
+        width: 320,
+        height: 180,
+        index: 23,
+        alt: 'gallery image',
+    },
+    {
+        src: '/portrait2.webp',
+        original: '/portrait2.webp',
+        width: 366,
+        height: 640,
+        index: 24,
         alt: 'gallery image',
     },
 ]

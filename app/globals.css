@@ -33,6 +33,41 @@ h2 {
     );
 }
 
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+}
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #0e0e0c;
+    border: 1px solid #0a2239;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination .active a {
+    background-color: #4392f1;
+    color: #fff;
+}
+
+.pagination .disabled a {
+    pointer-events: none;
+    color: #ccc;
+    background-color: #f0f0f0;
+}
+
 @supports (-webkit-touch-callout: none) {
     .h-screen {
         height: 100vh;
@@ -41,7 +76,7 @@ h2 {
 }
 
 @layer components {
-    @media screen(md) {
+    @media (min-width: 768px) {
         .bg-hero {
             width: 1000px;
             height: 300px;
