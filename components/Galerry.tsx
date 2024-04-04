@@ -1,60 +1,44 @@
-import First from '@/public/golden.webp'
-import Second from '@/public/portrait_sunrise.webp'
-import Third from '@/public/portrait2.webp'
-import Fourth from '@/public/pointer.jpg'
-import Fifth from '@/public/spaniel.jpg'
-import Image from 'next/image'
+// components/Gallery.tsx
 
-const Gallery = () => {
-    const images = [
-        {
-            src: First,
-            alt: 'gallery image',
-            colSpan: 'col-span-2',
-            rowSpan: 'row-span-1',
-        },
-        {
-            src: Second,
-            alt: 'gallery image',
-            colSpan: 'col-span-1',
-            rowSpan: 'row-span-1',
-        },
-        {
-            src: Third,
-            alt: 'gallery image',
-            colSpan: 'col-span-2',
-            rowSpan: 'row-span-2',
-        },
-        {
-            src: Fourth,
-            alt: 'gallery image',
-            colSpan: 'col-span-1',
-            rowSpan: 'row-span-1',
-        },
-        {
-            src: Fifth,
-            alt: 'gallery image',
-            colSpan: 'col-span-2',
-            rowSpan: 'row-span-1',
-        },
-    ]
+'use client'
+import React, { useState } from 'react'
+import { Gallery } from 'react-grid-gallery'
+
+interface GalleryProps {
+    images: {
+        src: string
+        thumbnailWidth?: number
+        thumbnailHeight?: number
+        height: number
+        width: number
+    }[]
+}
+
+const MyGallery: React.FC<GalleryProps> = ({ images }) => {
+    const [lightboxIsOpen, setLightboxIsOpen] = useState<boolean>(false)
+    const [currentImage, setCurrentImage] = useState<number>(0)
+
+    const galleryImages = images.map((image) => ({
+        ...image,
+        thumbnailWidth: image.thumbnailWidth || 320, //
+        thumbnailHeight: image.thumbnailHeight || 212, //
+    }))
+
+    const openLightbox = (index: number) => {
+        setCurrentImage(index)
+        setLightboxIsOpen(true)
+    }
+
+    const closeLightbox = () => {
+        setCurrentImage(0)
+        setLightboxIsOpen(false)
+    }
+
     return (
-        <div className="container mx-auto max-w-7xl p-2 md:p-10">
-            <div className="grid gap-2 grid-cols-1 md:grid-cols-5 md:grid-rows-2 ">
-                {images.map((image, index) => (
-                    <div
-                        key={index}
-                        className={`${image.colSpan} ${image.rowSpan} w-full  overflow-hidden`}>
-                        <Image
-                            src={image.src}
-                            alt={image.alt}
-                            className="w-full h-full object-cover"
-                        />
-                    </div>
-                ))}
-            </div>
-        </div>
+        <>
+            <Gallery images={galleryImages} enableImageSelection={false} />
+        </>
     )
 }
 
-export default Gallery
+export default MyGallery

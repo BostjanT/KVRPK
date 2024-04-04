@@ -1,12 +1,10 @@
 import { ImageG } from '@/types/types'
-export const gallery: ImageG[] = [
+export const images = [
     {
         index: 1,
         src: '/fourdogs.webp',
-        original: '/fourddogs.webp',
-        width: 1344,
-        height: 768,
-        alt: 'gallery image',
+        width: 1792,
+        height: 1024,
     },
     {
         src: '/golden1.webp',
