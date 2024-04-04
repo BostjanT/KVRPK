@@ -37,9 +37,9 @@ const Footer = () => {
                         Novice
                     </a>
                     <a
-                        href="solanje"
+                        href="/galerija"
                         className="uppercase hover:text-alertOrange">
-                        Šolanje
+                        Galerija
                     </a>
                 </div>
                 {/* <!-- Klubski podatki --> */}

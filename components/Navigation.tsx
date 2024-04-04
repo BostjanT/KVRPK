@@ -14,7 +14,6 @@ const Navigation = () => {
         { href: '/klub', text: 'O nas' },
         { href: '/resevalni', text: 'Reševalni pes' },
         { href: '/novice', text: 'Novice' },
-        { href: '/solanje', text: 'Šolanje' },
         { href: '/galerija', text: 'Galerija' },
     ]
     return (
