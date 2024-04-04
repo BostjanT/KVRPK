@@ -1,10 +1,10 @@
-import { ImageG } from '@/types/types'
 export const images = [
     {
         index: 1,
         src: '/fourdogs.webp',
         width: 1792,
         height: 1024,
+        thumbnail: ''
     },
     {
         src: '/golden1.webp',
@@ -12,7 +12,7 @@ export const images = [
         width: 1792,
         height: 1024,
         index: 2,
-        alt: 'gallery image',
+        alt: 'gallery image',  thumbnail: ''
     },
     {
         src: '/golden_forest.jpg',
@@ -20,7 +20,7 @@ export const images = [
         width: 512,
         height: 512,
         index: 3,
-        alt: 'gallery image',
+        alt: 'gallery image',  thumbnail: ''
     },
     {
         src: '/fourdogs.webp',

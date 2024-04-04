@@ -7,7 +7,6 @@ import Modal from './Modal'
 interface GalleryProps {
     images: {
         src: string
-        thumbnail: string
         thumbnailWidth?: number
         thumbnailHeight?: number
         width: number
@@ -27,9 +26,11 @@ const MyGallery: React.FC<GalleryProps> = ({ images }) => {
     }
 
     const galleryImages = images.map((image, index) => ({
-        ...image,
+        src: image.src,
         thumbnailWidth: image.thumbnailWidth || 320,
         thumbnailHeight: image.thumbnailHeight || 212,
+        width: image.width || 320,
+        height: image.height || 212,
     }))
 
     return (
