@@ -40,11 +40,11 @@ const Modal: React.FC<ModalProps> = ({
                     className="w-full h-full object-cover mx-auto"
                 />
                 <button
-                    className="absolute top-0 right-1 text-alertOrange"
+                    className="absolute p-1 top-1 right-1 bg-dark rounded-full text-alertOrange"
                     onClick={onClose}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-8 w-8"
+                        className="h-6 w-6 "
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor">

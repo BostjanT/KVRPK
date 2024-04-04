@@ -1,42 +1,60 @@
-// components/Gallery.tsx
-
 'use client'
 import React, { useState } from 'react'
 import { Gallery } from 'react-grid-gallery'
+import CustomPopup from './ImagePopUp'
+import Modal from './Modal'
 
 interface GalleryProps {
     images: {
         src: string
+        thumbnail: string
         thumbnailWidth?: number
         thumbnailHeight?: number
-        height: number
         width: number
+        height: number
     }[]
 }
 
 const MyGallery: React.FC<GalleryProps> = ({ images }) => {
-    const [lightboxIsOpen, setLightboxIsOpen] = useState<boolean>(false)
-    const [currentImage, setCurrentImage] = useState<number>(0)
+    const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
-    const galleryImages = images.map((image) => ({
+    const openModal = (index: number) => {
+        setSelectedImage(index)
+    }
+
+    const closeModal = () => {
+        setSelectedImage(null)
+    }
+
+    const galleryImages = images.map((image, index) => ({
         ...image,
-        thumbnailWidth: image.thumbnailWidth || 320, //
-        thumbnailHeight: image.thumbnailHeight || 212, //
+        thumbnailWidth: image.thumbnailWidth || 320,
+        thumbnailHeight: image.thumbnailHeight || 212,
     }))
-
-    const openLightbox = (index: number) => {
-        setCurrentImage(index)
-        setLightboxIsOpen(true)
-    }
-
-    const closeLightbox = () => {
-        setCurrentImage(0)
-        setLightboxIsOpen(false)
-    }
 
     return (
         <>
-            <Gallery images={galleryImages} enableImageSelection={false} />
+            <Gallery
+                images={galleryImages}
+                enableImageSelection={false}
+                onClick={(index) => openModal(index)} // Disable image selection
+            />
+            {selectedImage !== null && (
+                <Modal
+                    isOpen={true}
+                    onClose={closeModal}
+                    imageSrc={images[selectedImage].src}
+                    imageAlt={`Image ${selectedImage}`}
+                    imageHeight={
+                        images[selectedImage].thumbnailHeight ||
+                        images[selectedImage].height
+                    } // Adjust as needed
+                    imageWidth={
+                        images[selectedImage].thumbnailWidth ||
+                        images[selectedImage].width
+                    } // Adjust as needed
+                />
+            )}
         </>
     )
 }
