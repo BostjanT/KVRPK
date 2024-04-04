@@ -18,7 +18,7 @@ export default function Home() {
             <Tabs />
             <HomeNews />
             <Faq />
-            <Gallery />
+            <Gallery images={[]} />
             <Solanje />
             <Sponzorji />
         </>

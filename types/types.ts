@@ -1,8 +1,10 @@
 export interface ImageG {
-    index: number
-    src: string
-    thumbnail?: string
-    alt: string
-    width: number
-    height: number
+    pictures: {
+        index: number
+        src: string
+        thumbnail?: string
+        alt: string
+        width: number
+        height: number
+    }
 }

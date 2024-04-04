@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
 import PasjiNet from '@/public/sponzorji/pasjinet.jpg'
 import Triglav from '@/public/sponzorji/logo_triglav.png'
-import Hertz from '@/public/sponzorji/Hertz_.jpg'
+import Hertz from '@/public/sponzorji/Hertz.jpg'
 import Link from 'next/link'
 
 type SponzorjiProps = {
