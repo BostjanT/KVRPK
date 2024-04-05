@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Fourth from '@/public/pointer.jpg'
 import Fifth from '@/public/spaniel.jpg'
-import Logo from '@/public/KVRPK_LOGO_small.png'
+
+import { PhoneIcon, AtSymbolIcon, HomeIcon } from '@heroicons/react/24/outline'
 
 export const metadata = {
     title: 'KVRPK - Klub',
@@ -9,14 +10,10 @@ export const metadata = {
 
 const Klub = () => {
     return (
-        <section className="container md:max-w-5xl md:px-0 mb-8 md:my-8  mx-auto min-h-screen shadow-xl shadow-darkGrey relative">
+        <section className="container md:max-w-5xl md:px-0 mb-8 md:my-8 mx-auto shadow-xl shadow-darkGrey relative">
             <div className="bg-hero"></div>
-            <Image
-                src={Logo}
-                alt="klubski logo"
-                className="absolute hidden md:block top-[30vh] w-[14rem] -right-[10rem] -z-10 rotate-[30deg] opacity-70"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 ">
                 <div className="order-1 md:order-none md:col-span-1 md:row-span-1 flex items-center justify-center bg-darkGrey text-white">
                     <p className="px-8 py-8 md:py-0 text-center md:text-md">
                         Klub vodnikov reševalnih psov(KVRP) Kranj je bil
@@ -63,6 +60,27 @@ const Klub = () => {
                         alt="about us image"
                         className="w-full h-full object-contain"
                     />
+                </div>
+                <div className="order-7 md:order-none md:col-span-2 row-span-1 bg-darkGrey text-white text-center py-8">
+                    <h4 className="font-bold mb-3">Dodatne informacije</h4>
+                    <p>D.Š.: 51123924</p>
+                    <p>TRR: SI56 0313 8100 0034 288</p>
+                    <div className="flex flex-col md:flex-row items-center justify-center md:space-x-10 mt-4">
+                        <div className="flex items-center text-white">
+                            <PhoneIcon className="h-4 w-4 mr-2" />
+                            <p>+386 41 855 924</p>
+                        </div>
+                        <div className="flex items-center text-white">
+                            <AtSymbolIcon className="h-4 w-4 mr-2" />
+                            <p>info.kvrp.kranj@gmail.com</p>
+                        </div>
+                        <div className="flex items-center text-white">
+                            <HomeIcon className="h-4 w-4 mr-2" />
+                            <p className="text-center">
+                                Vidmarjeva 3, Kranj Slovenija
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

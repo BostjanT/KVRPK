@@ -1,6 +1,6 @@
 import novice from '@/public/news.json'
 import Image from 'next/image'
-import { Fragment } from 'react'
+
 
 const Novice = () => {
     const news = novice.vnosi
@@ -32,7 +32,7 @@ const Novice = () => {
                                 <h5 className="mb-2 text-xl font-medium leading-tight ">
                                     {news.naslov}
                                 </h5>
-                                <div className="flex items-center mt-4 mb-2 space-x-8 uppercase">
+                                <div className="flex flex-col md:flex-row mt-4 mb-2 md:space-x-8 uppercase">
                                     <p>{news.datum}</p>
                                     <p>{news.tip}</p>
                                 </div>

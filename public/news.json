@@ -6,7 +6,9 @@
             "datum": "2024-03-28",
             "vsebina": "Ekipa reševalnih psov je uspešno izvedla iskalno akcijo v visokogorju. Pse so uspešno uporabili pri iskanju pogrešane osebe, ki so jo našli v dobrem zdravstvenem stanju. Bravo vsem reševalcem!",
             "tip": "novica",
-            "slika": "/golden1.webp"
+            "slika": "/golden1.webp",
+            "width": 500,
+            "height": 400
         },
         {
             "id": 2,
@@ -14,7 +16,9 @@
             "datum": "2024-03-25",
             "vsebina": "Danes smo organizirali predstavitev dela reševalnih psov za šolarje. Otroci so imeli priložnost spoznati naše štirinožne junake in se naučili nekaj osnovnih veščin iskanja v naravi.",
             "tip": "predstavitev",
-            "slika": "/golden1.webp"
+            "slika": "/golden1.webp",
+            "width": 500,
+            "height": 400
         },
         {
             "id": 3,
@@ -22,7 +26,9 @@
             "datum": "2024-03-20",
             "vsebina": "Naša ekipa reševalnih psov je bila aktivirana za pomoč pri iskanju pogrešanih oseb pod ruševinami po potresu. Naši psi so ključni pri hitrem lociranju preživelih pod ruševinami. Delamo neprekinjeno, da bi rešili čim več življenj.",
             "tip": "akcija",
-            "slika": "/iskalna_akcija.jpg"
+            "slika": "/iskalna_akcija.jpg",
+            "width": 500,
+            "height": 300
         },
         {
             "id": 4,
@@ -30,7 +36,9 @@
             "datum": "2024-03-15",
             "vsebina": "Z veseljem sporočamo, da smo začeli novo šolanje naših reševalnih psov. V naslednjih mesecih bomo izobraževali nove pse in njihove vodnike, da bodo pripravljeni na vsako situacijo. Z veseljem sporočamo, da smo začeli novo šolanje naših reševalnih psov. V naslednjih mesecih bomo izobraževali nove pse in njihove vodnike, da bodo pripravljeni na vsako situacijo.",
             "tip": "novica",
-            "slika": "/skupinska.jpg"
+            "slika": "/skupinska.jpg",
+            "width": 500,
+            "height": 400
         }
     ]
 }

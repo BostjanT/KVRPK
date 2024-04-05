@@ -7,13 +7,13 @@ import RescueDogWork from '@/components/RescueDogWork'
 
 const ResevalniPsi = () => {
     return (
-        <section className="flex flex-col container bg-whiter md:px-0 mt-2 md:mt-0 mx-auto  shadow-xl shadow-darkGrey relative ">
+        <section className="flex flex-col container bg-whiter md:px-0 mt-4 md:mt-0 mx-auto shadow-xl shadow-darkGrey ">
             <div className="relative">
                 <div className="bg-hero"></div>
 
                 <div className="flex flex-col md:relative mx-auto items-center max-w-full h-[500px] justify-center">
                     <div className="relative w-full h-full">
-                        <div className="absolute inset-0 bg-darkGrey opacity-50 rounded-t-md md:rounded-md"></div>
+                        <div className="absolute inset-0 bg-darkGrey opacity-65 "></div>
                         <Image
                             src={RescueDogs}
                             alt="four dogs with mountains in background"
