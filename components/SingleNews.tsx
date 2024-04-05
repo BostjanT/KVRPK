@@ -23,7 +23,7 @@ const SingleNews = ({ id, url, title, text, width, height }: SingleNews) => {
                     width={width}
                     height={height}
                 />
-                <a href="#!">
+                <a href={`/novice/${id}`}>
                     <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
                 </a>
             </div>
