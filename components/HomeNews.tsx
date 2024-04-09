@@ -30,6 +30,7 @@ const HomeNews = () => {
                             text={news.vsebina}
                             width={news.width}
                             height={news.height}
+                            id={news.id}
                         />
                     ))}
                 </div>
