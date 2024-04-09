@@ -2,16 +2,44 @@ import novice from '@/public/news.json'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 
-const NewsPage = ({ id }: { id: number }) => {
+/* export const generateStaticParams = () => {
     const news = novice.vnosi
-    const singleNews = news.filter((item) => item.id === id)
+    return news.map((news: any) => ({ news }))
+}
 
-    if (singleNews.length === 0) {
+export const generateMetadata = () => {
+    const news = novice.vnosi
+    if (!news) {
         notFound()
-        return null // Return null or handle the case when news is not found
     }
+    return {
+        news,
+    }
+} */
 
-    const matchNews = singleNews[0]
+type NewsPageProps = {
+    id: number
+    naslov: string
+    datum: string
+    vsebina: string
+    tip: string
+    slika: string
+    width: number
+    height: number
+}[]
+
+const NewsPage = ({
+    params: { slug },
+}: {
+    params: { slug: NewsPageProps }
+}) => {
+    const news = slug
+    console.log('from slug article', slug)
+
+    if (news.length === 0) {
+        notFound()
+        return null
+    }
 
     return (
         <div className="block max-w-md rounded-lg bg-whiter shadow-lg shadow-shadows text-dark">
@@ -21,21 +49,21 @@ const NewsPage = ({ id }: { id: number }) => {
                 data-twe-ripple-color="light">
                 <Image
                     className="rounded-t-lg max-h-40 object-cover"
-                    src={matchNews.slika}
-                    width={matchNews.width}
-                    height={matchNews.height}
+                    src={news.slika}
+                    width={news.width}
+                    height={news.height}
                     alt="slika iz novice"
                 />
             </div>
             <div className="p-6 text-surface text-dark">
                 <h5 className="mb-2 text-xl font-medium leading-tight ">
-                    {matchNews.naslov}
+                    {news.naslov}
                 </h5>
                 <div className="flex flex-col md:flex-row mt-4 mb-2 md:space-x-8 uppercase">
-                    <p>{matchNews.datum}</p>
-                    <p>{matchNews.tip}</p>
+                    <p>{news.datum}</p>
+                    <p>{news.tip}</p>
                 </div>
-                <p className="mb-4 text-base ">{matchNews.vsebina}</p>
+                <p className="mb-4 text-base ">{news.vsebina}</p>
             </div>
         </div>
     )
