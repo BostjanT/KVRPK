@@ -39,6 +39,36 @@
             "slika": "/skupinska.jpg",
             "width": 500,
             "height": 400
+        },
+        {
+            "id": 5,
+            "naslov": "Reševalni psi praznujejo mednarodni dan reševalnih psov",
+            "datum": "2024-04-04",
+            "vsebina": "Danes obeležujemo mednarodni dan reševalnih psov in izpostavljamo izjemno delo, ki ga opravljajo naši štirinožni prijatelji. Zahvaljujemo se jim za pogum, zvestobo in neprecenljiv prispevek k reševanju življenj.",
+            "tip": "praznovanje",
+            "slika": "/skupinska.jpg",
+            "width": 500,
+            "height": 300
+        },
+        {
+            "id": 6,
+            "naslov": "Šola v naravi s reševalnimi psi za otroke iz socialno ogroženih družin",
+            "datum": "2024-04-08",
+            "vsebina": "Danes smo organizirali posebno šolo v naravi za otroke iz socialno ogroženih družin, kjer so imeli priložnost spoznati delo reševalnih psov. Otroci so bili navdušeni nad priložnostjo, da se naučijo nekaj novega in preživijo čas v naravi.",
+            "tip": "družbeni dogodek",
+            "slika": "/skupinska.jpg",
+            "width": 500,
+            "height": 400
+        },
+        {
+            "id": 7,
+            "naslov": "Reševalni psi na mednarodnem tekmovanju",
+            "datum": "2024-04-12",
+            "vsebina": "Ponosno sporočamo, da se naši reševalni psi udeležujejo mednarodnega tekmovanja reševalnih psov v Alpah. Tekmovanje bo potekalo v naslednjem tednu, kjer bodo naši psi pokazali svoje znanje in spretnosti v različnih scenarijih.",
+            "tip": "tekmovanje",
+            "slika": "/golden1.webp",
+            "width": 500,
+            "height": 300
         }
     ]
 }

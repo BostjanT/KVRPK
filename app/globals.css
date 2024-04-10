@@ -23,6 +23,10 @@ h2 {
     height: calc(100vh - 26vh);
 }
 
+.news-height {
+    min-height: calc(100vh - 36vh);
+}
+
 .sponsorBcg {
     background: rgb(10, 34, 57);
     background: linear-gradient(
